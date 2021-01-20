@@ -14,3 +14,15 @@ Feature: Calculator
     | 10 | 15 | 25 |
     | 99 | -99 | 0 |
     | -1 | -10 | -11 |
+    | -19 | 19 | 0 |
+
+  Scenario Outline: Negate a  number <num1>
+    Given I have a calculator
+    When I negate <num1>
+    Then the result should be <total>
+
+    Examples:
+      | num1  | total |
+      | -2    | 2     |
+      | 10    | -10   |
+

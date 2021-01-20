@@ -10,6 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class CalculatorRunSteps {
 
     private int total;
@@ -32,9 +33,15 @@ public class CalculatorRunSteps {
         total = calculator.add(num1, num2);
     }
 
+
     @Then("^the result should be (-?\\d+)$")
     public void validateResult(int result) throws Throwable {
         Assert.assertThat(total, Matchers.equalTo(result));
+    }
+
+    @When("^I negate (-?\\d+)")
+    public void testNegate(int num) throws Throwable{
+        total = calculator.negate(num);
     }
 
 }

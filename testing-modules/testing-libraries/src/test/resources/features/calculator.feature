@@ -22,3 +22,8 @@ Feature: Calculator
     Given I have a calculator
     When I add -1 and -10
     Then the result should be -11
+
+  Scenario: Negate a number -1
+    Given I have a calculator
+    When I negate -1
+    Then the result should be 1
