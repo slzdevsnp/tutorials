@@ -9,5 +9,6 @@ import org.junit.runner.RunWith;
         features = {"classpath:features/calculator.feature"}
         , plugin = {"pretty", "json:target/reports/json/calculator.json"}
         )
-public class CalculatorTest {
+public class CalculatorUnitTest {
+//fake name just to have my own class.  it should be call CalculatorIntegrationTest
 }
