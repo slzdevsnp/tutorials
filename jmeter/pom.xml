@@ -55,7 +55,7 @@
                 </executions>
                 <configuration>
                     <testFilesDirectory>${project.basedir}/src/main/resources</testFilesDirectory>
-                    <resultsDirectory>${project.basedir}/target/jmeter</resultsDirectory>
+                    <resultsDirectory>${project.basedir}/target</resultsDirectory>
                 </configuration>
             </plugin>
         </plugins>
