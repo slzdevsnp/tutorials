@@ -62,7 +62,7 @@
     </build>
 
     <properties>
-        <jmeter.version>2.9.0</jmeter.version>
+        <jmeter.version>2.6.0</jmeter.version>
     </properties>
 
 </project>
