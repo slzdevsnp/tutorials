@@ -1,0 +1,35 @@
+
+
+
+GET http://localhost:8989
+
+
+### curl get sttuents
+GET http://localhost:8989/students
+
+
+###
+
+# curl -X POST -H "Content-Type:application/json" -d '{ "firstName" : "Dassi", "lastName" : "Orleando", "phoneNumber": "+237 545454545", "email": "mymail@yahoo.fr" }' http://localhost:8080/students
+
+POST localhost:8989/students
+Content-Type: application/json
+
+{
+  "firstName": "Dassi",
+  "lastName": "Orleando",
+  "phoneNumber": "+237 545454545",
+  "email": "mymail@yahoo.fr"
+}
+
+###
+POST localhost:8989/students
+Content-Type: application/json
+
+{
+  "firstName": "Ivan",
+  "lastName": "Ivanov",
+  "phoneNumber": "+7 545454545",
+  "email": "mymail@yandex.ru"
+}
+
