@@ -54,8 +54,13 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <testFilesDirectory>${project.basedir}/src/main/resources</testFilesDirectory>
+                  <testFilesDirectory>${project.basedir}/src/main/resources</testFilesDirectory>
+                    <testFilesIncluded>
+                        <jMeterTestFile>${jmeter.test}</jMeterTestFile>
+                    </testFilesIncluded>
                     <resultsDirectory>${project.basedir}/target</resultsDirectory>
+                    <resultsFileFormat>csv</resultsFileFormat>
+                    <testResultsTimestamp>false</testResultsTimestamp>
                 </configuration>
             </plugin>
         </plugins>
@@ -63,6 +68,7 @@
 
     <properties>
         <jmeter.version>2.6.0</jmeter.version>
+        <jmeter.test>JMeter_szi.jmx</jmeter.test>
     </properties>
 
 </project>
